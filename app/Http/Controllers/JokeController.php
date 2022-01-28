@@ -9,7 +9,7 @@ class JokeController extends Controller
 {
     public function index()
     {
-        $jokes = Joke::simplePaginate(1);
+        $jokes = Joke::orderBy('id', 'DESC')->simplePaginate(1);
         return view('jokes.index', compact('jokes'));
     }
 
@@ -54,6 +54,9 @@ class JokeController extends Controller
 
     public function destroy($id)
     {
-        //
+        $joke = Joke::find($id);
+        dump($joke);
+        $joke->delete();
+        return redirect()->route('jokes.index');
     }
 }

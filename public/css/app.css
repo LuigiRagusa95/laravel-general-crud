@@ -80,11 +80,13 @@ main .container {
   align-items: center;
 }
 .quote__options > ul > li {
+  display: flex;
   font-size: 20px;
 }
 .quote__options > ul > li > a {
   display: flex;
   padding: 8px;
+  display: flex;
   color: #757575;
   align-items: center;
   justify-content: center;
@@ -94,4 +96,24 @@ main .container {
 }
 .quote:hover .quote__options {
   display: flex;
+}
+
+.button {
+  border: none;
+  display: flex;
+  outline: none;
+  cursor: pointer;
+  color: #757575;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.button > a {
+  display: flex;
+}
+.button:hover {
+  color: #0d6efd;
 }
