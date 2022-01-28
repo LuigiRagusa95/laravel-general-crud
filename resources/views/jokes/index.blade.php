@@ -14,6 +14,7 @@
                         </div>
                         @endforeach
                     </div>
+                    {{ $jokes->links() }}
                 </div>
             </div>
         </div>
