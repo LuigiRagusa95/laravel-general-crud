@@ -55,7 +55,6 @@ class JokeController extends Controller
     public function destroy($id)
     {
         $joke = Joke::find($id);
-        dump($joke);
         $joke->delete();
         return redirect()->route('jokes.index');
     }
