@@ -1,3 +1,1 @@
-@extends('templates.default');
-
-ciao sono la home
+@extends('templates.default')
