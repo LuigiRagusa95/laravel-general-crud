@@ -18,7 +18,7 @@
                             <div class="mb-3">
                                 <label for="punchline" class="form-label">Punchline</label>
                                 <input type="text" class="form-control" id="punchline" name="punchline"
-                                    value="{{$joke->setup}}">
+                                    value="{{$joke->punchline}}">
                             </div>
                             <button class="btn btn-primary" type="submit">Update</button>
                         </form>

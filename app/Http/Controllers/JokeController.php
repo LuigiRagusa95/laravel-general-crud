@@ -45,7 +45,11 @@ class JokeController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $joke = Joke::find($id);
+        $joke->update($data);
+
+        return redirect()->route('jokes.index');
     }
 
     public function destroy($id)
