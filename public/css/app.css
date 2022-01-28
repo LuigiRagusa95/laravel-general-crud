@@ -4,3 +4,51 @@ body {
   height: 100%;
   font-family: "DM Mono", monospace !important;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+main .container {
+  height: 100%;
+}
+
+.row-100 {
+  height: 100%;
+}
+
+.quote {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote__setup {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 32px;
+}
+.quote__setup::before {
+  content: "- ";
+}
+.quote__punchline {
+  font-size: 18px;
+  font-weight: 400;
+  color: #757575;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.quote__punchline::before {
+  content: "- ";
+  margin-right: 8px;
+}
+.quote__punchline::after {
+  content: "...";
+  margin-left: 8px;
+}

@@ -14,7 +14,8 @@ class JokeController extends Controller
      */
     public function index()
     {
-        //
+        $jokes = Joke::paginate(1);
+        return view('jokes.index', compact('jokes'));
     }
 
     /**
