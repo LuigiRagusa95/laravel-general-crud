@@ -14,7 +14,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    @if(!Request::is('/create'))
+                    @if(!Request::is('jokes/create'))
                     <li class="nav-item">
                         <a class="btn btn-primary py-1" aria-current="page" href="{{ route('jokes.create') }}">Add
                             New</a>

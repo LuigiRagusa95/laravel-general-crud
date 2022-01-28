@@ -7,7 +7,7 @@
             <div class="col">
                 <div class="content">
                     <div class="content__wrap">
-                        <form action="{{route('jokes.store')}}" method="post">
+                        <form action="{{route('jokes.store')}}" method="post" autocomplete="off">
                             @csrf
                             <div class="mb-3">
                                 <label for="formGroupExampleInput" class="form-label">Setup</label>

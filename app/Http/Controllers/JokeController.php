@@ -36,7 +36,11 @@ class JokeController extends Controller
 
     public function edit($id)
     {
-        //
+        $joke = Joke::find($id);
+        if ($joke) {
+            return view('jokes.edit', compact('joke'));
+        }
+        abort(404);
     }
 
     public function update(Request $request, $id)

@@ -39,6 +39,7 @@ main .container {
   width: 100%;
   display: flex;
   flex-basis: 50%;
+  position: relative;
   flex-direction: column;
   justify-content: center;
 }
@@ -65,4 +66,32 @@ main .container {
 .quote__punchline::after {
   content: "...";
   margin-left: 8px;
+}
+.quote__options {
+  top: 50;
+  display: flex;
+  display: none;
+  position: absolute;
+  transform: translateY(-100%);
+}
+.quote__options > ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.quote__options > ul > li {
+  font-size: 20px;
+}
+.quote__options > ul > li > a {
+  display: flex;
+  padding: 8px;
+  color: #757575;
+  align-items: center;
+  justify-content: center;
+}
+.quote__options > ul > li > a:hover {
+  color: #0d6efd;
+}
+.quote:hover .quote__options {
+  display: flex;
 }
