@@ -14,7 +14,7 @@ class JokeController extends Controller
      */
     public function index()
     {
-        $jokes = Joke::paginate(1);
+        $jokes = Joke::paginate(3);
         return view('jokes.index', compact('jokes'));
     }
 
@@ -25,7 +25,7 @@ class JokeController extends Controller
      */
     public function create()
     {
-        //
+        return view('jokes.create');
     }
 
     /**
